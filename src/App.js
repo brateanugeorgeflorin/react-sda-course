@@ -29,7 +29,7 @@ function App() {
 
           <div className="pt-3 pb-3">
             <p>Asta se modifica din react dinamic: {countState}</p>
-            <button className="btn-primary btn" onClick={addState}>Add with state React custom state</button>
+            <button className="btn-primary btn" onClick={addState}>Add with state React custom state 2</button>
           </div>
 
          <AboutState />
