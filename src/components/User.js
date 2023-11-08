@@ -12,11 +12,13 @@ export const User = (props) => {
     };
 
     return (
-        <div className="mb-3 p-3" style={bg ? brown : tomato}>
-            <h2>{props.name}</h2>
-            <p>Varsta: {props.age}</p>
-            <p>ID: {props.id}</p>
-            <button onClick={() => setbgSetup((prev) => !prev)}>Schimbare culoare</button>
+        <div className="col">
+            <div className="mb-3 p-3 rounded" style={bg ? brown : tomato}>
+                <h2>{props.name}</h2>
+                <p>Varsta: {props.age}</p>
+                <p>ID: {props.id}</p>
+                <button className="btn btn-primary" onClick={() => setbgSetup((prev) => !prev)}>Schimbare culoare</button>
+            </div>
         </div>
     );
 }
