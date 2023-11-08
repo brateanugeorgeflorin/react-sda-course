@@ -4,7 +4,7 @@ export const Button = (prop) => {
     };
     return (
         <>
-        <button type="button" className="btn btn-outline-secondary btn-lg" onClick={show}>Aprinde lumina</button>
+        <button type="button" className="btn btn-outline-secondary btn-lg" onClick={show}>Aprinde lumina beleao</button>
         </>
     );
 }

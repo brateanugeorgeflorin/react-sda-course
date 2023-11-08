@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { AboutState, IncrementOption, OpositeButton } from './AboutState';
 import { Home } from './components/Home';
+import { UseEffect } from './components/UseEffect';
 
 function App() {
   const [countState, setCountState] = useState(0);
@@ -36,6 +37,7 @@ function App() {
          <IncrementOption />
          <OpositeButton />
          <Home />
+         <UseEffect />
       </header>
     </div>
   );

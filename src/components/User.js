@@ -4,7 +4,7 @@ export const User = (props) => {
     const [bg, setbgSetup] = useState(true);
 
     const brown = {
-        backgroundColor : "brown",
+        backgroundColor : "#f7f7f7",
     };
 
     const tomato = {
