@@ -44,7 +44,7 @@ export const IncrementOption = () => {
                 <div className="d-flex gap-2 align-content-center justify-content-center">
                     <button className="btn btn-success" onClick={incrementOpt}>Incrementeaza <PlusCircle /></button> 
                     <button className="btn btn-secondary" onClick={decrementOpt}>Decrementeaza <DashCircle /></button> 
-                    <button className="btn btn-danger" onClick={() => {setRezultat((prev) => prev = 0)}}>Valoare zero <XCircle /></button>
+                    <button className="btn btn-danger" onClick={goToZero}>Valoare zero <XCircle /></button>
                 </div>
             </div>
         </>
