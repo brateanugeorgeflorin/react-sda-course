@@ -15,7 +15,7 @@ export const HeaderComponent = () => {
 
     return (
         <>
-            <header className="App-header">
+            <header className="App-header container">
                 <h1 className="mt-5">
                     Main Header
                 </h1>

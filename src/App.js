@@ -1,14 +1,16 @@
 import { AboutState, IncrementOption, OpositeButton } from './AboutState';
 import { HeaderComponent } from './components/HeaderComponent';
 import { Home } from './components/Home';
+import { Navbar } from './components/Navbar';
 import { UseEffect } from './components/UseEffect';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, NavLink } from 'react-router-dom';
 
 function App() {
   
   return (
-    <div className="App container">
+    <div className="App">
         <Router>
+          <Navbar/>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/aboutstate' element={<AboutState />} />

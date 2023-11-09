@@ -12,8 +12,7 @@ export const UseEffect = () => {
 
     return(
         <>
-            <div className="useEffectLogic">
-                <hr/>
+            <div className="useEffectLogic container">
                 <div className="col-12 d-flex gap-3 mb-3 mt-3 pt-3">
                     <button type="button" className="btn btn-outline-primary btn-lg" onClick={() => setTipResursa("despre-noi")}>Despre noi</button>
                     <button type="button" className="btn btn-outline-primary btn-lg" onClick={() => setTipResursa("tarife")}>Tarife</button>

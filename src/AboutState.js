@@ -12,7 +12,7 @@ export const AboutState = () => {
 
     return (
         <>
-            <div className="pt-4 pb-4">
+            <div className="pt-4 pb-4 container">
                 <p>Exemplu prin care outputam ce scriem intr-un input</p>
                 <input className="form-control" type="text" onChange={changeInputValue} />
                 <small className="form-text text-muted">{inputState}</small>
@@ -39,7 +39,7 @@ export const IncrementOption = () => {
 
     return (
         <>
-            <div className="text-center fs-2">
+            <div className="text-center fs-2 container pt-3">
                 <p>{rezultat}</p>
                 <div className="d-flex gap-2 align-content-center justify-content-center">
                     <button className="btn btn-success" onClick={incrementOpt}>Incrementeaza <PlusCircle /></button> 
@@ -68,8 +68,10 @@ export const OpositeButton = () => {
 
     return (
         <>
-            <Button setSeeText={setSeeText} />
-            <div className="mt-3 p-3 rounded" style={seeText ? color1 : color2}>{seeText ? 'Pot aprinde lumina' : 'Ce-ar fi s-o stingi ca ma doare corneea???'}</div>
+            <div className="container pt-3">
+                <Button setSeeText={setSeeText} />
+                <div className="mt-3 p-3 rounded" style={seeText ? color1 : color2}>{seeText ? 'Pot aprinde lumina' : 'Ce-ar fi s-o stingi ca ma doare corneea???'}</div>
+            </div>
         </>
     );
 };
