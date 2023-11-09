@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 
 export const UseEffect = () => {
     const [tipResursa, setTipResursa] = useState("acasa");
+    const [conditionareAfisare, setConditionareAfisare] = useState(false);
+
+    console.log('no resource');
 
     useEffect(() => {
         console.log(tipResursa);
@@ -19,6 +22,11 @@ export const UseEffect = () => {
                 
                 <div className="col-12 mb-3 pb-5">
                     <h1>Slug pagina curenta: {tipResursa}</h1>
+                </div>
+
+                <div className="col-12 mb-3 pb-5">
+                    <button type="button" className="btn btn-outline-primary btn-lg" onClick={() => setConditionareAfisare((prev) => !prev) }>Conditionare</button>
+                    {conditionareAfisare && <div className="alert alert-primary mt-3" role="alert">Am activat info Box</div>}
                 </div>
             </div>
         </>
