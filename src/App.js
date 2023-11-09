@@ -3,7 +3,7 @@ import { HeaderComponent } from './components/HeaderComponent';
 import { Home } from './components/Home';
 import { Navbar } from './components/Navbar';
 import { UseEffect } from './components/UseEffect';
-import { BrowserRouter as Router, Routes, Route, Link, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   
