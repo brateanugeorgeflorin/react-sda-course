@@ -6,7 +6,13 @@ import { UseEffect } from './components/UseEffect';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-  
+
+  const animale = [
+    { name : 'Pisica', age : 3, id : 1, friendly : true },
+    { name : 'Catel', age : 3, id : 2, friendly : true },
+    { name : 'Leu', age : 5, id : 3, friendly : false }
+  ]
+
   return (
     <div className="App">
         <Router>
@@ -17,7 +23,7 @@ function App() {
             <Route path='/useeffect' element={<UseEffect />} />
             <Route path='/opositebutton' element={<OpositeButton />} />
             <Route path='/incrementoption' element={<IncrementOption />} />
-            <Route path='/headercomponent' element={<HeaderComponent />} />
+            <Route path='/headercomponent' element={<HeaderComponent arr={animale} />} />
             <Route path='*' element={<div className='container'><p className='pt-4'>Page does not exists.</p></div>} />
           </Routes>
         </Router>  

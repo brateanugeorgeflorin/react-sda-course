@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export const HeaderComponent = () => {
+export const HeaderComponent = (props) => {
     const [countState, setCountState] = useState(0);
     let count = 0;
 
@@ -12,6 +12,8 @@ export const HeaderComponent = () => {
     const addState = () => {
         setCountState(countState + 1);
     };
+
+    console.log(props.arr);
 
     return (
         <>
@@ -29,6 +31,9 @@ export const HeaderComponent = () => {
                     <button className="btn-primary btn" onClick={addState}>Add with state React custom state 2</button>
                 </div>
             </header>
+            <div className='getProps'>
+              
+            </div>
         </>
     );
 }
