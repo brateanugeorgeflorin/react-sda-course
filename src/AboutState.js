@@ -39,7 +39,8 @@ export const IncrementOption = () => {
 
     return (
         <>
-            <div className="text-center fs-2 container pt-3">
+            <div className="text-center fs-2 container pt-3 pt-3 mt-3">
+                <h2 className="pb-4">Incrementare, decrementare folosind "useState()"</h2>
                 <p>{rezultat}</p>
                 <div className="d-flex gap-2 align-content-center justify-content-center">
                     <button className="btn btn-success" onClick={incrementOpt}>Incrementeaza <PlusCircle /></button> 
@@ -68,7 +69,8 @@ export const OpositeButton = () => {
 
     return (
         <>
-            <div className="container pt-3">
+            <div className="container pt-3 mt-3">
+                <h2 className="pb-3">Utilizarea "useState()"</h2>
                 <Button setSeeText={setSeeText} />
                 <div className="mt-3 p-3 rounded" style={seeText ? color1 : color2}>{seeText ? 'Pot aprinde lumina' : 'Ce-ar fi s-o stingi ca ma doare corneea???'}</div>
             </div>

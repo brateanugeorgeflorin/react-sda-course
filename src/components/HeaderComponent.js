@@ -16,9 +16,9 @@ export const HeaderComponent = () => {
     return (
         <>
             <header className="App-header container">
-                <h1 className="mt-5">
-                    Main Header
-                </h1>
+                <h2 className="mt-5">
+                    Incrementare consola vs incrementare in HTML
+                </h2>
                 <hr />
                 <div className="pt-3 pb-3">
                     <p>Asta se modifica doar in consola: {count}</p>

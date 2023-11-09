@@ -18,7 +18,7 @@ function App() {
             <Route path='/opositebutton' element={<OpositeButton />} />
             <Route path='/incrementoption' element={<IncrementOption />} />
             <Route path='/headercomponent' element={<HeaderComponent />} />
-            <Route path='*' element={<p>Page does not exists.</p>} />
+            <Route path='*' element={<div className='container'><p className='pt-4'>Page does not exists.</p></div>} />
           </Routes>
         </Router>  
     </div>
