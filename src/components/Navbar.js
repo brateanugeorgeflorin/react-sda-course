@@ -19,6 +19,9 @@ export const Navbar = () => {
                         <NavLink to="/opositebutton" className="nav-link" activeclassname="active">OpositeButton</NavLink>
                         </li>
                         <li className="nav-item">
+                        <NavLink to="/monkeys" className="nav-link" activeclassname="active">Monkeys</NavLink>
+                        </li>
+                        <li className="nav-item">
                         <NavLink to="/incrementoption" className="nav-link" activeclassname="active">IncrementOption</NavLink>
                         </li>
                         <li className="nav-item">
