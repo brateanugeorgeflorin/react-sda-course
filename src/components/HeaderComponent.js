@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { ConsoleChild } from './ConsoleChild';
 
 export const HeaderComponent = (props) => {
     const [countState, setCountState] = useState(0);
@@ -13,11 +14,12 @@ export const HeaderComponent = (props) => {
         setCountState(countState + 1);
     };
 
-    console.log(props.arr);
+    console.log("Header Component " + JSON.stringify(props.arr));
 
     return (
         <>
             <header className="App-header container">
+                <h1>HeaderComponent</h1>  
                 <h2 className="mt-5">
                     Incrementare consola vs incrementare in HTML
                 </h2>
@@ -31,8 +33,10 @@ export const HeaderComponent = (props) => {
                     <button className="btn-primary btn" onClick={addState}>Add with state React custom state 2</button>
                 </div>
             </header>
-            <div className='getProps'>
+
+            <div className="getProps container">
               
+              <ConsoleChild array2 = {props.arr} />
             </div>
         </>
     );
