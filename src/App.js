@@ -32,7 +32,7 @@ function App() {
             <Route path='/opositebutton' element={<OpositeButton />} />
             <Route path='/incrementoption' element={<IncrementOption />} />
             <Route path='/monkeys' element={<Monkeys />} />
-            <Route path='/monkeys/:id' element={<Monkey />} />
+            <Route path='/monkeys/:id' element={<Monkey monkeysArr={MonkeysArr} />} />
             <Route path='/headercomponent' element={<HeaderComponent arr={animale} />} />
             <Route path='*' element={<div className='container'><p className='pt-4'>Page does not exists.</p></div>} />
           </Routes>
