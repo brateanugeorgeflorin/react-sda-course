@@ -18,7 +18,7 @@ export const HeaderComponent = (props) => {
 
     return (
         <>
-            <header className="App-header container">
+            <header className="App-header container pt-3">
                 <h1>HeaderComponent</h1>  
                 <h2 className="mt-5">
                     Incrementare consola vs incrementare in HTML
