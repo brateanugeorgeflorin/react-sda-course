@@ -1,7 +1,10 @@
 import { User } from "./User";
 import { Users } from "./db";
+import { useContext } from "react";
+import { AppContext } from "../App";
 
 export const Home = () => {
+    const {monkeyName} = useContext(AppContext);
 
     return(
         <>
@@ -12,6 +15,7 @@ export const Home = () => {
                     return <User name={user.name} age={user.age} key={user.key} id={user.key} />;
                     })}
                 </div>
+                <h1 className="mt-3 mb-3">AppContext Works Get last accessed Monkey: {monkeyName}</h1>
             </div>
         </>
     );
